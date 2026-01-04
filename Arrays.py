@@ -113,3 +113,46 @@ def Count_element():
     print('The Count of 6 is:',arr.count(6))
 
 Count_element()
+
+""" Two Pointer Technique in Array """
+
+# Reverse an array
+array = [1,2,3,4,5]
+left = 0
+right = len(array) - 1
+
+def reverse_array(array,left,right):
+  while left < right:
+    temp = array[left]
+    array[left] = array[right]
+    array[right] = temp
+    left +=1
+    right -=1
+
+reverse_array(array,left,right)
+print('Reversed array:',array)
+
+# find a palindrome
+
+word = input('Enter a word:')
+
+def is_palindrome(s):
+    left = 0
+    right = len(word)-1
+    while left < right:
+        if s[left] != s[right]:
+            print(s,'is not a palindrome')
+            return
+        left +=1
+        right -=1
+    print(s,'is a palindrome')
+
+is_palindrome(word)
+
+
+
+
+
+
+
+

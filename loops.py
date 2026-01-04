@@ -14,7 +14,7 @@ def count():
   while count <= 5:
     print('Python')
     count += 1
-count()
+# count()
 
 # write a multiplication table for 2
 
@@ -25,4 +25,19 @@ def multiplication_table():
    print(i ,'x',num,'=', i * num)
    i += 1
 
-multiplication_table()
+# multiplication_table()
+
+# program for displaying even_odd numbers between 1 to n
+
+def even_odd():
+  print('Enter the number between 1 to n:')
+  num = int(input())
+  i = 1                  
+  while i <= num:
+    if i % 2 == 0:
+      print(i,'is even')
+    else:
+      print(i,'is odd')
+    i+=1
+
+even_odd() 
