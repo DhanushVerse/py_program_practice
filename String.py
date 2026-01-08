@@ -36,5 +36,19 @@ for i in range(0,len(info)):
 
 bike_name = ['Splendor','HF-Deluxe','NS-160','UNICORN 160']
 print('The bike names are:')
-for i in range(len(bike_name)):
-    print(bike_name[i],end=' ')
+for i in range(0,len(bike_name)):
+    print(bike_name[i],end=' \n')
+    
+  # string slicing
+
+info_msg = 'Welcome'
+print('The sliced string is:',info_msg[:4])
+print('The sliced string is:',info_msg[3:])
+
+# Immutable nature of string
+
+str1 = 'Hello'
+str1[1] = 'a'
+print(str1)  # This will raise an error since strings are immutable
+
+
