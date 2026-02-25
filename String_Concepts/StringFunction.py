@@ -26,5 +26,5 @@ print(msg *3)
 # The MemberShip of Particular character is determined using the keyword
 
 name = 'Dhanush'
-print('l' in name)
+print('s' in name)
 

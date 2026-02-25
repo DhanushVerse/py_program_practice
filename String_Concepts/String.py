@@ -7,13 +7,13 @@
 # Example
 
 str = 'Hello Good Morning'
-print(str[2])
-print(str[8])
+print(str[2])  # l
+print(str[8])  # o
 
 # Find the length of the string
 
 msg = 'Good bye'
-print(len(msg))
+print(len(msg)) # 7
 
 # Traverse a string using while loop
 
