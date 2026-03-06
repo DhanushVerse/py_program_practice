@@ -117,7 +117,7 @@ sports = fav_sports(sport='Kabadi')
 print(sports)
 
 # Note:
-#  -> If you use * in keyword argument but can you pass Positional arguments it will give you error.
+#  -> If you use * in keyword argument but you can pass Positional arguments it will give you error.
 
 # def year(*,year):
 #     return f'year: {year}'
