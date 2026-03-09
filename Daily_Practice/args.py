@@ -1,6 +1,6 @@
 """ Arbitary arguments """
 # 1.When you don't know how many arguments are passed in the function we use *args
-# 2.In this *arges are stored in tuple collector
+# 2.In this *args are stored in tuple collector
 # 3.Arbitary arguments are often shortend *args in Python Documentation
 
 def add_items_cart(*items):
