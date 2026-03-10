@@ -18,7 +18,7 @@ local_scope()
 """ Enclosing Scope """
 # It is often called as Nested Function. If you have one function inside another function the another function can access the main function
 # nonlocal keyword:
-#   -> when you have to change the outer variable function to inner variable function use nonlocal keyword to change the variable value.
+#   -> when you have to change the outer variable function to inner variable function use "nonlocal" keyword to change the variable value.
 #   -> If you change it normaly in inner variable of outer function variable it don't show error it - Python will understand The user has to create a new variable and it will be access only in Local Scope
 
 # Example:
@@ -48,7 +48,7 @@ def total_marks():
 total_marks()
 print(marks)
 
-""" Built in Scopt """
+""" Built in Scope """
 # In Python have the Default Built in Scopes:
 #  -> Functions: print(), len(), sum(), max(), min(), type(), range().
 #  -> Constants: None, True, False.
