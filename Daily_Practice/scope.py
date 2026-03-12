@@ -37,7 +37,7 @@ greeting_system('Dhanush')
 # If your variable is inside the function but you have to use in outside use global keyword before variable name
 
 # Example:
-x=25
+x=25        # global variable
 def fav_num():
     print(x)
 fav_num()
