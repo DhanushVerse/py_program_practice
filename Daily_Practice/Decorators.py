@@ -19,8 +19,14 @@ def introduce():
 def age():
     print('I am 22 years old!')
 
+@stamp
+def team():
+    print('I am Development team!')
+
+
 introduce()
 age()
+team()
 
 """ Arguments in the Decorated Function """
 # Functions that require arguments can also be decorated, just make sure you pass the arguments to the wrapper function.
@@ -44,3 +50,28 @@ def open_locker():
     print("Locker opened!✅")
 
 open_locker()
+
+"""*args and **kwargs usages:"""
+# Task for Practice:
+#   -> Double it
+
+def double_result(func):
+    def wrapper(*args,**kwargs):
+        print('Before function call...')
+        result = func(*args,**kwargs)
+        result = result * 2
+        print('After function call...')
+        return result
+    return wrapper
+
+@double_result
+def add(a,b):
+    return a + b
+print(add(5,5))
+
+@double_result
+def multiply(a,b,c):
+    return a * b * c
+print(multiply(2,3,4))
+
+    
