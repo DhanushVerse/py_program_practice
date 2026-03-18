@@ -74,4 +74,31 @@ def multiply(a,b,c):
     return a * b * c
 print(multiply(2,3,4))
 
+""" Decorators with Parameters """
+# A decorator with parameters is just a wrapper around a decorator — so you can pass your own settings into it.
+
+# Example:
+# String Length Validator
+
+def validate_length(min,max):
+    def decorator(func):
+        def wrapper(text):
+            if len(text) < min:
+                return '❌error'
+            elif len(text) > max:
+                return '❌error'
+            else:
+                return func(text)
+                pass
+        return wrapper
+    return decorator
+
+@validate_length(3,10)
+def set_username(name):
+    return f'Username set: {name}'
+
+user_name = input('Enter the valid Username:')
+print(set_username(user_name))
+
+
     
