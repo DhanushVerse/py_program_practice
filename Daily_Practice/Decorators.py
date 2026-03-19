@@ -101,4 +101,42 @@ user_name = input('Enter the valid Username:')
 print(set_username(user_name))
 
 
+""" Preserving Function Metadata """
+# Function in Python has Metadata that can be accessed using the __name__ and __doc__ attributes.
+
+# Example:
+def myfunction():
+    return 'Hello welcome to Code world'
+print(myfunction.__name__)
+
+# note:
+#  -> But when a function is decorated the metadata of the original function is lost
+#  -> To fix this, Python has a built-in function called functools.wraps that can be used to preserve the original function's name and docstring
+
+def changecase(func):
+    def wrapper():
+        return func().upper
+    return wrapper
+@changecase
+def Mycase():
+    return 'welcome to py world'
+print(Mycase.__name__)                         # o/p : wrapper
+print(Mycase.__doc__)                          # o/p : None
+
+
+""" Import functools.wraps """
+# Example:
+import functools
+def changecase(func):
+    @functools.wraps(func)
+    def wrapper():
+        return func().upper
+    return wrapper
+@changecase
+def myfunction():
+    return 'have a great day!'
+print(myfunction.__name__)                     # o/p : myfunction
+
+
+
     
