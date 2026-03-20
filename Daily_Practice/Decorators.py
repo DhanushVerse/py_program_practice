@@ -3,7 +3,7 @@
 # A Decorator can be called multiple times.Just place the Decorator above the function to Decorate.
 
 # Example:
-
+# Basic Decorator and Multiple Decorator calls
 def stamp(func):
     def wrapper():
         print('='*3 + 'START' + '='*3)
@@ -29,7 +29,28 @@ age()
 team()
 
 """ Arguments in the Decorated Function """
-# Functions that require arguments can also be decorated, just make sure you pass the arguments to the wrapper function.
+# Functions that require arguments can also be decorated, just make sure you pass the arguments to the wrapper function
+# Example:
+#  -> Smart Divider:
+def check_zero(func):
+    def wrapper(a,b):
+        if b == 0:
+            return f'You cant Divide this'
+        else:
+           result =  func(a,b)
+           return result
+    return wrapper
+
+@check_zero
+def divide(a,b):
+    return a / b
+
+print(divide(10,2))
+print(divide(10,0))
+
+
+""" Decorators With Arguments """
+# Decorators can accept their own arguments by adding another wrapper level.
 
 # Example:
 
@@ -107,7 +128,7 @@ print(set_username(user_name))
 # Example:
 def myfunction():
     return 'Hello welcome to Code world'
-print(myfunction.__name__)
+print(myfunction.__name__)              # o\p : myfunction
 
 # note:
 #  -> But when a function is decorated the metadata of the original function is lost
