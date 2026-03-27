@@ -25,6 +25,17 @@ numbers = [1, 4, 7, 10, 13]
 labeler = ['Even' if x%2==0 else 'Odd' for x in numbers]
 print(labeler)
 
+# Fibonacci series:
+# The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones.usually,it starts with 0 and 1
+def fibonacci_series(n):
+    a,b = 0,1
+    for i in range(n):
+        print(a, end=' ')
+        a,b = b, a + b
+fibonacci_series(10)
+
+
+
 
 
 

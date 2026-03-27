@@ -14,7 +14,18 @@ def countdown(n):                           # o/p:
         return                              # 1
      print(n)                               # Blast off
      countdown(n-1) 
-countdown(3)                        
+countdown(3)                    
+
+# Factorial of n numbers:
+def find_factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * find_factorial(n-1)
+
+fact_num = int(input('Enter the factorial number:'))
+fact = find_factorial(fact_num)
+print(fact)
                 
         
         
