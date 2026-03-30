@@ -26,7 +26,8 @@ def find_factorial(n):
 fact_num = int(input('Enter the factorial number:'))
 fact = find_factorial(fact_num)
 print(fact)
-                
+
+
         
         
     
