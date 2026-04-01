@@ -5,6 +5,7 @@
 # In Normal function we use return and it will terminate the function.but in generator we use yield.
 # When we use 'yield' the function will pause and get the value.
 # When the function is called again, it resumes exactly from where it left off instead of starting from the beginning.
+# When the function is called it can't executed instead it will send a generator object.when you use next() then only it will executed.
 
 """ Example """
 def my_generator():
@@ -17,3 +18,23 @@ print(next(gen))
 
 # Note:
 #  -> when you call it again next yield will be execute
+
+# Task name : Log File Monitor
+def error_filter(log_data):
+    for line in log_data:
+        if "ERROR" in line:
+            yield line
+logs = [
+    "INFO: System started",
+    "ERROR: Database connection failed",
+    "INFO: User logged in",
+    "ERROR: Timeout occurred",
+    "INFO: Task completed"
+]
+# Create generator object
+my_filter = error_filter(logs)
+
+# In this we can't use next() instead in your generator object and take the values using for loop.
+for error in my_filter:
+    print(f'Found: {error}')
+

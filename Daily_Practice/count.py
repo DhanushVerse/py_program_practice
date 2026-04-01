@@ -18,6 +18,6 @@
 
 sum = 0
 for i in range(1,6):
-    sum = sum+i
+    sum = sum+i    # 1 3 6 10 15
 print(sum)
 
