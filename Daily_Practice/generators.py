@@ -38,3 +38,14 @@ my_filter = error_filter(logs)
 for error in my_filter:
     print(f'Found: {error}')
 
+""" generator expressions """
+# We can create a generator with generator expression
+
+gen_exp = (x*x for x in range(5))
+print(gen_exp)
+print(list(gen_exp))
+
+# why we use it:
+#  -> we use list comprehension for huge amount of data the RAM size is fully occupied and your system is slow.
+#  -> Incase we use generator expression it takes less memory.
+
