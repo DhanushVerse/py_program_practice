@@ -16,4 +16,3 @@ task_app = my_task_app()
 print('\n The Task list are:')
 for t in task_app:
    print(t)
-gi
