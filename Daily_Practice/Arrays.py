@@ -1,7 +1,12 @@
 """ Array is a Data Structure used to store a list of elements 
   Creation of Arrays:
-    arr = [1,2,3,4]
-"""
+    arr = [1,2,3,4] """
+
+""" Specification of Arrays: """
+# 1.Array can support same data type.
+# 2.It takes less memory and very efficient.
+# 3.It is fixed size and initialize size once we create the array.
+# 4.High performance,especially for math operations.
 
 def Array_Creation():
     arr = [1,2,3,4]
