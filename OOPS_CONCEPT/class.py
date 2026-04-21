@@ -46,6 +46,23 @@ print(car1.company_details())
 print(car2.company_details())
 print(car3.company_details())
 
+print('='*10)
+# Create a class for human beings:
+class Human_being:
+    def __init__(self,name,age,city,gender):
+        self.human_name = name
+        self.human_age = age
+        self.human_city = city
+        self.human_gender = gender
+    def human_details(self):
+        print(self.human_name,'details')
+        return f"name: {self.human_name} \nage: {self.human_age} \ncity: {self.human_city} \nGender: {self.human_gender}"
+
+person1 = Human_being("alen",22,"gdm","Male")
+person2 = Human_being("rajan",21,'kpm',"Male")
+print(person1.human_details())
+print(person2.human_details())
+
 
 
 
