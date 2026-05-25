@@ -48,6 +48,18 @@ def check_password():
 psd_chk = check_password()
 print(psd_chk)
 
+# case change generator
+def case_change(name):
+    if name.isupper():
+        return name.lower()
+    else:
+        return name.upper()
+
+name = input('Enter the name:')
+case_convertion = case_change(name)
+print(case_convertion)
+
+
 
 
 
