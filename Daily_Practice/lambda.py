@@ -10,8 +10,20 @@
 add = lambda a : a + 10
 print(add(2))
 
+sub = lambda a,b : a - b
+print(sub(5,3))
+
 mul = lambda a,b : a * b
 print(mul(2,5))
+
+div = lambda a,b : a / b       # quotient
+print(div(10,2))
+
+modulas = lambda a,b : a % b    # remainder
+print(modulas(10,3))     
+
+floordiv = lambda a,b : a // b   # remainder without decimal
+print(floordiv(10,2))
 
 """ Normal function with Inside Lambda function """
 # In this case we use lambda function inside and return a simple logic
