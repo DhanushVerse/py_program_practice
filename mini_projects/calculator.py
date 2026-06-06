@@ -1,24 +1,24 @@
-def addition(num1,num2):               
+def addition(num1,num2):           # addition function   
     total = num1 + num2
     return total
 
-def subtraction(num1,num2):              
+def subtraction(num1,num2):        # subtraction function     
     total = num1 - num2
     return total
 
-def multiplication(num1,num2):
+def multiplication(num1,num2):     # multiplication function
     total = num1 * num2
     return total
 
-def division(num1,num2):
+def division(num1,num2):           # division function
     total = num1 / num2
     return total
 
-def modulus(num1,num2):
+def modulus(num1,num2):            # modulus function
     total = num1 % num2
     return total
 
-def power(num1,num2):
+def power(num1,num2):              # power function
     total = num1 ** num2
     return total
 
@@ -33,6 +33,9 @@ while True:
     if option == '8':
         print('Thank you!')
         break
+
+    elif option == '7':
+        print(show_history)
     
     num1 = int(input('Enter number1:'))
     num2 = int(input('Enter number2:'))
