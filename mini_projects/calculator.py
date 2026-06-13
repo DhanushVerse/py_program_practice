@@ -42,34 +42,28 @@ while True:
     
     if option == '1':
         add = addition(num1,num2)
-        print(add)
-        show_history.append(add)
-
+        print(num1,'+',num2,'=',add)
+    
     elif option == '2':
         sub = subtraction(num1,num2)
-        print(sub)
-        show_history.append(sub)
+        print(num1,'-',num2,'=',sub)
 
     elif option == '3':
         mul = multiplication(num1,num2)
-        print(mul)
-        show_history.append(mul)
+        print(num1,'*',num2,'=',mul)
 
     elif option == '4':
         div = division(num1,num2)
-        print(div)
-        show_history.append(div)
-
+        print(num1,'/',num2,'=',div)
+    
     elif option == '5':
         mod = modulus(num1,num2)
-        print(mod)
-        show_history.append(mod)
-
+        print(num1,'%',num2,'=',mod)
+    
     elif option == '6':
         power_result = power(num1,num2)
-        print(power_result)
-        show_history.append(power_result)
-
+        print(num1,'**',num2,'=',power_result)
+    
     else:
         print('Invalid option')
 
