@@ -31,8 +31,11 @@ while True:
     option = input('Choose an option:')
 
     if option == '7':
-        for item in show_history:
-            print(item)
+        if not show_history:
+            print('History is empty')
+        else:
+            for item in show_history:
+                print(item)
         continue
 
     if option == '8':
