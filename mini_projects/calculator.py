@@ -20,8 +20,13 @@ def division(num1,num2):         # division function
          return f'{num1} / {num2} = {total}'
 
 def modulus(num1,num2):            # modulus function
-    total = num1 % num2
-    return f'{num1} % {num2} = {total}'
+    try:
+        num1 % num2
+    except:
+        print('Modulus cannot divide by zero')
+    else:
+        total = num1 % num2
+        return f'{num1} % {num2} = {total}'
 
 def power(num1,num2):              # power function
     total = num1 ** num2
