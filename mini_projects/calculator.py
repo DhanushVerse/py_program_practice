@@ -34,7 +34,6 @@ def power(num1,num2):              # power function
 
 show_history = []
 
-
 while True:
     print('='*5 + ' CALCULATOR ' + '='*5,'\n')
     print('\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modulas\n6. Power\n7. Show history\n8. Exit')
@@ -51,9 +50,14 @@ while True:
     if option == '8':
         print('Thank you!')
         break
-    
-    num1 = int(input('Enter number1:'))
-    num2 = int(input('Enter number2:'))
+
+    try:
+       num1 = int(input('Enter number1:'))
+       num2 = int(input('Enter number2:'))
+
+    except:
+        print('Please enter valid number')
+        continue
     
     if option == '1':
         add = addition(num1,num2)
