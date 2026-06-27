@@ -43,8 +43,8 @@ while True:
         if not show_history:
             print('History is empty')
         else:
-            for item in show_history:
-                print(item)
+            for no,item in enumerate(show_history,start=1):
+                print(f"{no}. {item}")
         continue
 
     if option == '8':
